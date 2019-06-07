@@ -52,13 +52,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\FormaGeometrica.cs" />
+    <Compile Include="Classes\Reporte.cs" />
+    <Compile Include="Formas\Circulo.cs" />
+    <Compile Include="Formas\Cuadrado.cs" />
+    <Compile Include="Formas\TrapecioRectangulo.cs" />
+    <Compile Include="Formas\TrianguloEquilatero.cs" />
+    <Compile Include="Interfaces\IFormaGeometrica.cs" />
+    <Compile Include="Lang\FormasText.en-US.Designer.cs" />
+    <Compile Include="Lang\FormasText.es-AR.Designer.cs" />
+    <Compile Include="Lang\FormasText.fr-FR.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <EmbeddedResource Include="Lang\FormasText.en-US.resx" />
+    <EmbeddedResource Include="Lang\FormasText.es-AR.resx" />
+    <EmbeddedResource Include="Lang\FormasText.fr-FR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Readme.txt" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
